@@ -13,10 +13,10 @@ variables:
 
 stages:
 - stage: Build
-  displayName: Build image
+  displayName: Build image and Push to DockerHub
   jobs:
   - job: Build
-    displayName: Build
+    displayName: BuildandPush
     pool: Self
     steps:
     - task: Docker@2
